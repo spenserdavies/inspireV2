@@ -1,5 +1,5 @@
 import store from "../store.js";
-import Todo from "../models/todo.js";
+import Todo from "../models/Todo.js";
 //NOTE THE INITIAL COUNT OF TASKS REMAINING
 let _remaining = 0;
 // @ts-ignore

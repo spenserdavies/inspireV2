@@ -3,7 +3,7 @@ export default class Todo{
         this.completed = data.completed//{ type: Boolean, required: true, default: false}
         this.id = data._id // {type: String, required: true, unique: true }
         this.user = data.user // { type: String, required: true },
-        this.description = data.description // { type: String, required: true},
+        this.description = data.description // { type: String, required: true}
     }
     get Template(){
         return /*html*/`
