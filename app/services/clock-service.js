@@ -1,4 +1,3 @@
-import Clock from "../models/Clock.js";
 import store from "../store.js";
 
 
