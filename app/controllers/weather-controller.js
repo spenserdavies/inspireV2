@@ -18,7 +18,6 @@ function drawWeatherC() {
   document.getElementById("weather").innerHTML = template;
 }
 
-
 export default class WeatherController {
   constructor() {
     store.subscribe("weather", drawWeatherF);

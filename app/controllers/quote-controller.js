@@ -14,7 +14,6 @@ function _drawQuote(){
 
 export default class QuoteController {
   constructor(){
-    //console.log("quote controller");
         store.subscribe("quote", _drawQuote)
     QuoteService.getQuote();
   }

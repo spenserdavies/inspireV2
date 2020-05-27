@@ -11,7 +11,6 @@ const imgApi = axios.create({
 class ImageService {
 
   async getImage() {
-    //console.log("getting image");    
     let res = await imgApi.get();
     store.commit("image", new Image(res.data));
     //console.log(res.data)

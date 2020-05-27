@@ -4,9 +4,6 @@ import ImageController from "./controllers/image-controller.js";
 import QuoteController from "./controllers/quote-controller.js";
 import ClockController from "./controllers/clock-controller.js"
 
-
-
-//TODO Dont forget to register all your controllers
 class App {
   constructor() {
     this.weatherController = new WeatherController();
@@ -19,7 +16,3 @@ class App {
 }
 
 window["app"] = new App();
-
-// let checkboxElem = document.getElementById("checkbox1");
-// checkboxElem.removeAttribute("checked")
-// checkboxElem.setAttribute("checked", "checked")

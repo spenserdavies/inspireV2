@@ -23,9 +23,6 @@ class TodoService {
       .catch(e => console.error(e));
     //TODO Handle this response from the server
   }
-  
-  
-
   addTodoAsync(todo) {
     //TODO Handle this response from the server (hint: what data comes back, do you want this?)
     _todoApi.post('', todo)
@@ -34,7 +31,6 @@ class TodoService {
     })
       .catch(e => console.error(e))
   }
-
   toggleTodoStatusAsync(todoId) {
     let todo = store.State.todos.find(todo => todo.id == todoId);
     //NOTE is there a todo?
@@ -56,7 +52,6 @@ class TodoService {
     //TODO Make sure that you found a todo,
     //		and if you did find one
     //		change its completed status to whatever it is not (ex: false => true or true => false)
-
   removeTodoAsync(todoId) {
     //TODO Work through this one on your own
     //		what is the request type
@@ -69,7 +64,6 @@ class TodoService {
       .then(r => {this.getTodos()})
       .catch(e => console.error(e));
   }
-
   get Remaining(){
     return _remaining;
   }

@@ -10,7 +10,7 @@ export default class Todo{
         <div class="row">
             <div class="col-10 form-check">
                 <input class="form-check-input pointer" onclick="app.todoController.toggleTodoStatus('${this.id}')" id="${this.id}" type="checkbox" ${this.completed ? "checked" : ""} value="option">
-                    ${this.description}
+                ${this.description}
             </div>
             <div class="col-2">
                 <p onclick="app.todoController.removeTodo('${this.id}')"><i class="fa fa-trash-alt  pointer"></i></p>

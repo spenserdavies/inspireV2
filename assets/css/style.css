@@ -12,26 +12,20 @@ body{
 main{
   flex-grow: 1;
 }
-
 .hidden{
   display:none;
 }
-
 #quote:hover + .hidden{
   display: flex;
 }
-
 #clock{
   font-size: 50pt;
 }
-
 .text-right{
   text-align: right;
-}
-.text-shadow{
+}.text-shadow{
   text-shadow: 2px 2px black;
 }
-
 .pointer{
   cursor: pointer;
 }

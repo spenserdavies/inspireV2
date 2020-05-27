@@ -10,6 +10,5 @@ export default class Quote {
       <span class="hidden text-center">- ${this.author}</span>
       </div>
     `
-  }
-  
+  }  
 }

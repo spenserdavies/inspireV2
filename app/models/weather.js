@@ -1,6 +1,5 @@
 export default class Weather {
   constructor(data) {
-    //console.log(data);    
     this.city = data.name
     this.kelvin = Math.floor(data.main.temp)
     this.celsius = Math.floor(this.kelvin - 273.15)

@@ -6,7 +6,6 @@ export default class Image {
     this.url = data.url
   }
 
-
   get urlTemplate(){
     let template1 = "url('"
     let template2 = "${this.url}')"

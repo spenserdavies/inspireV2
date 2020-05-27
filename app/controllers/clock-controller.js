@@ -1,10 +1,5 @@
-import ClockService from "../services/clock-service.js";
-import store from "../store.js";
-import Clock from "../models/clock.js"
-
 function _drawClock() {
   let today = new Date();
-  // console.log(today);
   
   let h = today.getHours();
   let m = today.getMinutes();
@@ -34,31 +29,9 @@ function _drawClock() {
   let t = setTimeout(() => {_drawClock()}, 1000);
 }
 
-
-
 export default class ClockController {
   constructor() {
     //NOTE draws clock on creation of controller
     _drawClock();
   }
 }
-
-
-
-
-// let amPm = ""
-// if(hours<12){
-//   amPm = "AM"
-// } else {
-//   amPm = "PM"
-// }
-
-// if(hours > 12){
-//   hours -= 12;
-// } else{
-//   hours = hours;
-// }
-
-// let hoursStr = ("0"+ hours).slice(-2);
-// let minutesStr = ("0" + minutes).slice(-2)
-// let secondsStr = ("0" + seconds).slice(-2)

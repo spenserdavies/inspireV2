@@ -6,7 +6,6 @@ const weatherApi = axios.create({
   baseURL: "//bcw-sandbox.herokuapp.com/api/weather",
   timeout: 5000
 });
-
 class WeatherService {
   async getWeather() {
     let res = await weatherApi.get();    

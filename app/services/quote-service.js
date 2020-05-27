@@ -10,7 +10,6 @@ const _quoteApi = axios.create({
 //TODO create methods to retrieve data trigger the update window when it is complete
 class QuoteService {
   async getQuote() {
-    //console.log("getting quote");    
     let res = await _quoteApi.get();
     store.commit("quote", new Quote(res.data.quote));
     //console.log(res.data)
