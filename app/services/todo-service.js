@@ -1,5 +1,5 @@
 import store from "../store.js";
-import Todo from "../models/Todo.js";
+import todo from "../models/todo.js";
 //NOTE THE INITIAL COUNT OF TASKS REMAINING
 let _remaining = 0;
 // @ts-ignore
@@ -17,7 +17,7 @@ class TodoService {
     console.log("Getting the Todo List");
     _todoApi.get('')
       .then(result => {
-        let todos = result.data.data.map(todo => new Todo(todo));
+        let todos = result.data.data.map(todo => new todo(todo));
         store.commit("todos", todos);
       })
       .catch(e => console.error(e));

@@ -1,4 +1,4 @@
-import Weather from "../models/weather.js";
+import weather from "../models/weather.js";
 import store from "../store.js";
 
 // @ts-ignore
@@ -9,7 +9,7 @@ const weatherApi = axios.create({
 class WeatherService {
   async getWeather() {
     let res = await weatherApi.get();    
-    store.commit("weather", new Weather(res.data));
+    store.commit("weather", new weather(res.data));
   }
 }
 

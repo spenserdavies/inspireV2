@@ -6,6 +6,7 @@ import store from "../store.js";
 
 function _drawQuote(){
   let quote = store.State.quote
+  // @ts-ignore
   let quoteTemplate = quote.Template
   document.getElementById("quote").innerHTML = quoteTemplate
 }
